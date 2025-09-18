@@ -1,0 +1,24 @@
+.fibPanel {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+h1, h2, p, input {
+    text-align: center;
+}
+
+p {
+    font-size:xx-large;
+}
+
+img, input {
+    display: block;
+    margin: auto;
+}
