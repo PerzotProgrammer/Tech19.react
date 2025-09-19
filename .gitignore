@@ -142,7 +142,6 @@ vite.config.ts.timestamp-*
 # CUSTOM
 README.md
 .gitignore
-vite-env.d.ts
 
 # FROM PROJECT
 
