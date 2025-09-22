@@ -1,0 +1,17 @@
+.content {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 10%;
+    padding: 4px;
+    border: 1px solid black;
+}
