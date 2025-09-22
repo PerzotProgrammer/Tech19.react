@@ -142,6 +142,7 @@ vite.config.ts.timestamp-*
 # CUSTOM
 README.md
 .gitignore
+package-lock.json
 
 # FROM PROJECT
 
