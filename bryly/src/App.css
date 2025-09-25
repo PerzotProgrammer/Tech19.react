@@ -1,0 +1,40 @@
+#root {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #444444;
+    color: #dddddd;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.solidName {
+    font-weight: bold;
+    font-size: large;
+}
+
+h1 {
+    margin: 50px auto;
+}
+
+table {
+    margin: auto;
+    border: 2px solid #dddddd;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 20px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+ol {
+    margin: 50px;
+}
