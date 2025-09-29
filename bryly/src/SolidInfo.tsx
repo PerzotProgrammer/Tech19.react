@@ -1,10 +1,12 @@
-import {Cube} from "./solids/Cube.ts";
 import type {Solid} from "./solids/Solid.ts";
+import {Cube} from "./solids/Cube.ts";
 import {Cuboid} from "./solids/Cuboid.ts";
 import {Sphere} from "./solids/Sphere.ts";
 import cubeImg from "./assets/szescian.jpg";
 import cuboidImg from "./assets/prostopadloscian.jpg";
 import sphereImg from "./assets/kula.jpg";
+import DimensionsOfSolid from "./DimensionsOfSolid.tsx";
+import {useState} from "react";
 
 interface SolidInfoProps {
     solid: Solid
@@ -12,22 +14,14 @@ interface SolidInfoProps {
 
 export default function SolidInfo(props: SolidInfoProps) {
     let img: string = "";
-    const listOfValues: number[] = [];
-    const area: number = props.solid.calculateArea();
-    const volume: number = props.solid.calculateVolume();
+    const [area, setArea] = useState(props.solid.calculateArea());
+    const [volume, setVolume] = useState(props.solid.calculateVolume());
 
     if (props.solid instanceof Cube) {
-        listOfValues.push((props.solid as Cube).baseLength);
         img = cubeImg;
     } else if (props.solid instanceof Cuboid) {
-        const cuboid = (props.solid as Cuboid);
-
-        listOfValues.push(cuboid.aDimLength);
-        listOfValues.push(cuboid.bDimLength);
-        listOfValues.push(cuboid.cDimLength);
         img = cuboidImg;
     } else if (props.solid instanceof Sphere) {
-        listOfValues.push((props.solid as Sphere).radiusLength);
         img = sphereImg;
     }
 
@@ -41,13 +35,10 @@ export default function SolidInfo(props: SolidInfoProps) {
                 <p>Pole: {props.solid.areaFormula}</p>
             </td>
             <td>
-                <ol>
-                    {listOfValues.map((elem, index) => {
-                        return (<li>
-                            <p>Długość {String.fromCharCode(index + 65)} : {elem}</p>
-                        </li>)
-                    })}
-                </ol>
+                <DimensionsOfSolid solid={props.solid} onChange={() => {
+                    setArea(props.solid.calculateArea());
+                    setVolume(props.solid.calculateVolume());
+                }}/>
                 <p>Pole: {area}</p>
                 <p>Objętość: {volume}</p>
             </td>
