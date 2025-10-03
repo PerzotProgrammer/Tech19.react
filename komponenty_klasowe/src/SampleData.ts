@@ -1,0 +1,46 @@
+import {CarCard} from "./CarCard.tsx";
+
+export const carBrands: string[] = [
+    "---",
+    "FSO",
+    "FSM Fiat",
+    "AWE Wartburg",
+    "IFA Trabant",
+    "Star",
+    "Łada",
+    "GAZ",
+    "UAZ",
+    "Jelcz",
+
+];
+
+export const cars: CarCard[] = [
+    new CarCard({carBrand: "FSO", carName: "Polonez", carModel: "MR'83", carPrice: 58999, productionYear: 1983, horsePower: 82, engineCapacity: 1598, imgPath: "./img/polonez_borewicz.jpg"}),
+    new CarCard({carBrand: "FSO", carName: "Syrena", carModel: "105", carPrice: 17999, productionYear: 1980, horsePower: 40, engineCapacity: 842, imgPath: "./img/syrena_105.jpg"}),
+    new CarCard({carBrand: "FSM Fiat", carName: "Fiat", carModel: "126p", carPrice: 9299, productionYear: 1985, horsePower: 24, engineCapacity: 652, imgPath: "./img/fiat_126p.jpg"}),
+    new CarCard({carBrand: "FSM Fiat", carName: "Fiat", carModel: "125p", carPrice: 22999, productionYear: 1978, horsePower: 75, engineCapacity: 1481, imgPath: "./img/fiat_125p.jpg"}),
+    new CarCard({carBrand: "AWE Wartburg", carName: "Wartburg", carModel: "353", carPrice: 48999, productionYear: 1975, horsePower: 50, engineCapacity: 992, imgPath: "./img/wartburg_353.jpg"}),
+    new CarCard({carBrand: "AWE Wartburg", carName: "Wartburg", carModel: "311", carPrice: 15999, productionYear: 1960, horsePower: 37, engineCapacity: 900, imgPath: "./img/wartburg_311.jpg"}),
+    new CarCard({carBrand: "IFA Trabant", carName: "Trabant", carModel: "601", carPrice: 26999, productionYear: 1987, horsePower: 26, engineCapacity: 594, imgPath: "./img/trabant_601.jpg"}),
+    new CarCard({carBrand: "IFA Trabant", carName: "Trabant", carModel: "P50", carPrice: 11999, productionYear: 1962, horsePower: 18, engineCapacity: 500, imgPath: "./img/trabant_p50.jpg"}),
+    new CarCard({carBrand: "Star", carName: "Star", carModel: "200", carPrice: 76999, productionYear: 1976, horsePower: 150, engineCapacity: 6842, imgPath: "./img/star_200.jpg"}),
+    new CarCard({carBrand: "Star", carName: "Star", carModel: "266", carPrice: 54999, productionYear: 1973, horsePower: 150, engineCapacity: 6842, imgPath: "./img/star_266.jpg"}),
+    new CarCard({carBrand: "Łada", carName: "Łada", carModel: "NIVA 2121", carPrice: 31999, productionYear: 1980, horsePower: 80, engineCapacity: 1568, imgPath: "./img/lada_niva.jpg"}),
+    new CarCard({carBrand: "Łada", carName: "Łada", carModel: "2107", carPrice: 18999, productionYear: 1982, horsePower: 75, engineCapacity: 1500, imgPath: "./img/lada_2107.jpg"}),
+    new CarCard({carBrand: "GAZ", carName: "GAZ", carModel: "69", carPrice: 65999, productionYear: 1955, horsePower: 55, engineCapacity: 2120, imgPath: "./img/gaz_69.jpg"}),
+    new CarCard({carBrand: "GAZ", carName: "GAZ", carModel: "21 Wołga", carPrice: 99999, productionYear: 1960, horsePower: 70, engineCapacity: 2445, imgPath: "./img/gaz_21_volga.jpg"}),
+    new CarCard({carBrand: "UAZ", carName: "UAZ", carModel: "452", carPrice: 23999, productionYear: 1965, horsePower: 75, engineCapacity: 2445, imgPath: "./img/uaz_452.jpg"}),
+    new CarCard({carBrand: "UAZ", carName: "UAZ", carModel: "469", carPrice: 56999, productionYear: 1972, horsePower: 75, engineCapacity: 2445, imgPath: "./img/uaz_469.jpg"}),
+    new CarCard({carBrand: "Jelcz", carName: "Jelcz", carModel: "043", carPrice: 87999, productionYear: 1970, horsePower: 185, engineCapacity: 11100, imgPath: "./img/jelcz_043.jpg"}),
+    new CarCard({carBrand: "Jelcz", carName: "Jelcz", carModel: "PR110", carPrice: 34999, productionYear: 1980, horsePower: 240, engineCapacity: 11000, imgPath: "./img/jelcz_pr110.jpg"}),
+    new CarCard({carBrand: "FSO", carName: "Polonez Caro", carModel: "1.4 GLI", carPrice: 20999, productionYear: 1993, horsePower: 68, engineCapacity: 1397, imgPath: "./img/polonez_caro.jpg"}),
+    new CarCard({carBrand: "FSO", carName: "Warszawa", carModel: "223", carPrice: 25999, productionYear: 1968, horsePower: 70, engineCapacity: 2120, imgPath: "./img/warszawa_223.jpg"}),
+    new CarCard({carBrand: "FSM Fiat", carName: "Fiat", carModel: "127p", carPrice: 9999, productionYear: 1975, horsePower: 45, engineCapacity: 903, imgPath: "./img/fiat_127p.jpg"}),
+    new CarCard({carBrand: "AWE Wartburg", carName: "Wartburg", carModel: "1.3", carPrice: 21999, productionYear: 1988, horsePower: 58, engineCapacity: 1272, imgPath: "./img/wartburg_13.jpg"}),
+    new CarCard({carBrand: "IFA Trabant", carName: "Trabant", carModel: "1.1", carPrice: 13999, productionYear: 1990, horsePower: 40, engineCapacity: 1043, imgPath: "./img/trabant_11.jpg"}),
+    new CarCard({carBrand: "Star", carName: "Star", carModel: "1142", carPrice: 59999, productionYear: 1995, horsePower: 220, engineCapacity: 6842, imgPath: "./img/star_1142.jpg"}),
+    new CarCard({carBrand: "Łada", carName: "Łada", carModel: "2105", carPrice: 15999, productionYear: 1981, horsePower: 64, engineCapacity: 1294, imgPath: "./img/lada_2105.jpg"}),
+    new CarCard({carBrand: "GAZ", carName: "GAZ", carModel: "24 Wołga", carPrice: 28999, productionYear: 1975, horsePower: 95, engineCapacity: 2445, imgPath: "./img/gaz_24_volga.jpg"}),
+    new CarCard({carBrand: "UAZ", carName: "UAZ", carModel: "3151", carPrice: 32999, productionYear: 1986, horsePower: 80, engineCapacity: 2445, imgPath: "./img/uaz_3151.jpg"}),
+    new CarCard({carBrand: "Jelcz", carName: "Jelcz", carModel: "M11", carPrice: 45999, productionYear: 1985, horsePower: 185, engineCapacity: 11100, imgPath: "./img/jelcz_m11.jpg"}),
+];
