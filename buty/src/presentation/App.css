@@ -1,0 +1,56 @@
+#root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, #a60101, #008f00, #00008b);
+    color: #dddddd;
+    font-family: sans-serif;
+}
+
+.App {
+    text-align: center;
+}
+
+.FootwearList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.FootwearCard {
+    width: 25vw;
+    border: 3px solid #dddddd;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+input[type='button'] {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 3px solid #dddddd;
+    border-radius: 20px;
+    color: #dddddd;
+    padding: 20px;
+    margin: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+input[type='button']:hover {
+    background-color: rgba(100, 100, 100, 0.25);
+    transition: 0.2s;
+}
+
+img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.Clock {
+    font-size: large;
+    font-weight: bold;
+    margin: 50px 0;
+}
