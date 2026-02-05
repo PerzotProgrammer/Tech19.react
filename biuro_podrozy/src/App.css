@@ -1,0 +1,52 @@
+.App {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4a5958;
+    color: #cdcdcd;
+    font-family: Consolas, sans-serif;
+    font-weight: bold;
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+}
+
+ul {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15vw;
+}
+
+img {
+    height: 30vh;
+    margin-bottom: 5vh;
+    border: 5px solid #cdcdcd;
+    border-radius: 10px;
+}
+
+.ErrorText {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vw;
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+}
+
+.FlexWrap {
+    align-items: center;
+    display: flex;
+    gap: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.Section {
+    margin: 0 10vh;
+    min-height: 50vh;
+    align-content: center;
+    border: 5px solid #cdcdcd;
+    border-radius: 10px;
+    width: 40vw;
+}
