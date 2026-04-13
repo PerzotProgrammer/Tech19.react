@@ -1,0 +1,12 @@
+#App {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: gray;
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+    align-content: center;
+}
+
